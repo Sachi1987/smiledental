@@ -1,0 +1,23 @@
+.info {
+  transition: all 0.3s ease;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.name {
+  text-decoration: none;
+  color: $orange;
+  font-size: 22px
+}
+
+.table {
+/* Right section */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -5,13 +5,31 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title %></title>
+    <title>鹿児島市の歯医者　スマイル歯科医院</title>
+
+    <meta name="description" content="スマイル歯科医院は鹿児島市にある歯医者です。虫歯治療・歯周病・入れ歯・ 小児歯科などの一般歯科から自由診療まで幅広い治療をしています。">
+    <meta name= “keywords” content="スマイル歯科医院,鹿児島,鹿児島市,歯医者,スマイルデンタル,">
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
-    <%= favicon_tag 'images/favicon.png' %>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- fabicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico">
   </head>
   <body>
+    <%= partial "layouts/navbar" %>
     <%= yield %>
+    <%= partial "layouts/map" %>
+    <%= partial "layouts/info" %>
+    <!-- Render main footer. -->
+    <%= partial "layouts/footer" %>
   </body>
 </html>

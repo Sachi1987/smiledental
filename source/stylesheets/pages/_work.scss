@@ -1,0 +1,23 @@
+.work-pic {
+  background-image: url("/images/work.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.work-pic p {
+  color: white;/*文字は白に*/
+  font-weight: bold; /*太字に*/
+  font-size: 3em;/*サイズ2倍*/
+  text-align: center;
+  font-family :Quicksand, sans-serif;/*Google Font*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  }
